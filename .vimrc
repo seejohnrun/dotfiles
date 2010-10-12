@@ -7,6 +7,13 @@ set shiftwidth=2
 set showtabline=2
 set number
 set wrap
+
+if has("gui_macvim")
+	:set fuopt+=maxhorz
+	set guioptions-=T
+	set transparency=7
+endif
+
 cabbr te tabedit
 au BufNew,BufRead Gemfile set syntax=ruby
 au BufNew,BufRead irb_tempfile.rb.* set syntax=ruby
