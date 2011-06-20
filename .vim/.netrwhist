@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/mat/Projects/sunspot/sunspot'
-let g:netrw_dirhist_2='/opt/ruby-enterprise-1.8.6-20090610/lib/ruby/gems/1.8/gems/character-encodings-0.4.1/lib/encoding/character/utf-8'
-let g:netrw_dirhist_3='/home/mat/Projects/elfcast'
-let g:netrw_dirhist_4='/home/mat/Projects/sunspot'
-let g:netrw_dirhist_5='/home/mat/Projects/elfcast'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/jcrepezzi/Development/brewster'
+let g:netrw_dirhist_2='/Users/jcrepezzi/Development/bungee/lib/bungee'
+let g:netrw_dirhist_3='/Users/jcrepezzi/Development/bungee/lib'
+let g:netrw_dirhist_4='/Users/jcrepezzi/Development/brewster'
+let g:netrw_dirhist_5='/Users/jcrepezzi/Development/brewster/app'
+let g:netrw_dirhist_6='/Users/jcrepezzi/Development/brewster/app/models'
