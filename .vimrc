@@ -12,7 +12,6 @@ colorscheme xoria256
 if has("gui_macvim")
 	set fuopt+=maxhorz
 	set guioptions-=T
-	set transparency=7
 	set guifont=Monaco:h12
 endif
 
