@@ -7,6 +7,8 @@ set showtabline=2
 set number
 set wrap
 
+set t_Co=256
+
 colorscheme xoria256
 
 if has("gui_macvim")
