@@ -1,5 +1,6 @@
 # Set the path
 export PATH="~/Scripts:$PATH"
+. /usr/local/rvm/scripts/rvm
 
 # Alias vim to vi
 alias vim="vi"
