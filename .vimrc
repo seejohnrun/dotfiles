@@ -7,6 +7,8 @@ set showtabline=2
 set number
 set wrap
 
+set nofoldenable " disable folding
+
 set t_Co=256
 
 au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
