@@ -1,5 +1,5 @@
 # Set the path
-export PATH="~/Scripts:$PATH"
+export PATH="~/Scripts:~/pear/bin:$PATH"
 
 # Alias vim to vi
 alias vim="vi"
@@ -11,6 +11,9 @@ export CLICOLOR=1
 
 # i work for brewster
 export BREWSTER_USER=john
+
+export GREP_OPTIONS='--color=auto -R -i -n'
+export GREP_COLOR='0;93'
 
 # ps1 with git
 GIT_COMPLETION_PATH=/etc/bash_completion.d/git
