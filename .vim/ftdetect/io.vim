@@ -3,4 +3,4 @@
 " URL:         http://github.com/xhr/vim-io
 " License:     MIT
 
-autocmd BufNewFile,BufRead *.io set filetype=coffee
+autocmd BufNewFile,BufRead *.io set filetype=io
