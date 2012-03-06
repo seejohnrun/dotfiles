@@ -1,2 +1,6 @@
-au BufNewFile,BufRead *.io set filetype=io
-au BufNewFile,BufRead [iI]kefile,*.ike set filetype=io
+" Language:    Io
+" Maintainer:  Andrei Maxim <andrei@andreimaxim.ro>
+" URL:         http://github.com/xhr/vim-io
+" License:     MIT
+
+autocmd BufNewFile,BufRead *.io set filetype=coffee
