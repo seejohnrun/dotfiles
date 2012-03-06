@@ -17,7 +17,6 @@ export GREP_COLOR='0;93'
 
 # ps1 with git
 GIT_COMPLETION_PATH=/etc/bash_completion.d/git
-GIT_COMPLETION_PATH=/usr/local/Cellar/git/1.7.8.4/etc/bash_completion.d/git-completion.bash
 if [ -f $GIT_COMPLETION_PATH ]; then
   . $GIT_COMPLETION_PATH
   GIT_PS1_SHOWDIRTYSTATE=true # */+ for dirty
