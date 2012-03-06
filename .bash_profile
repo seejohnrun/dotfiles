@@ -3,7 +3,9 @@ export PATH="~/Scripts:~/pear/bin:$PATH"
 
 # Alias vim to vi
 alias vim="vi"
+alias ls='ls --color=auto'
 
+# Increase ULIMIT
 ulimit -n 1024
 
 # Colors!
