@@ -1,9 +1,8 @@
 # Set the path
-export PATH="~/Scripts:~/pear/bin:$PATH"
+export PATH="~/Scripts:/usr/local/bin:~/pear/bin:$PATH"
 
 # Alias vim to vi
 alias vim="vi"
-alias ls='ls --color=auto'
 
 # Increase ULIMIT
 ulimit -n 1024
@@ -14,7 +13,7 @@ export CLICOLOR=1
 # i work for brewster
 export BREWSTER_USER=john
 
-export GREP_OPTIONS='--color=auto -R -i -n'
+export GREP_OPTIONS='--color=auto -n'
 export GREP_COLOR='0;93'
 
 # ps1 with git
