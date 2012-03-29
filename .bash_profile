@@ -13,8 +13,8 @@ export CLICOLOR=1
 # i work for brewster
 export BREWSTER_USER=john
 
-export GREP_OPTIONS='--color=auto -n'
-export GREP_COLOR='0;93'
+# export GREP_OPTIONS='--color=auto -n'
+# export GREP_COLOR='0;93'
 
 # ps1 with git
 GIT_COMPLETION_PATH=/etc/bash_completion.d/git

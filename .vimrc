@@ -11,6 +11,15 @@ set nofoldenable " disable folding
 
 set t_Co=256
 
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
 au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 
 colorscheme xoria256
