@@ -23,6 +23,7 @@ noremap! <Right> <Esc>
 au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 
 colorscheme solarized
+set background=dark
 
 if has("gui_macvim")
 	set fuopt+=maxhorz
