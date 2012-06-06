@@ -1,5 +1,5 @@
 # Set the path
-export PATH="~/Scripts:/usr/local/bin:~/pear/bin:$PATH"
+export PATH="~/Scripts:~/Development/ino/bin:/usr/local/bin:~/pear/bin:$PATH"
 
 # Alias vim to vi
 alias vim="vi"
