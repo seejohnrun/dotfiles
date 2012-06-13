@@ -16,4 +16,4 @@ export PATH="$HOME/Scripts:/usr/local/bin:$HOME/pear/bin:$PATH"
 export CLICOLOR=1
 
 # Prompt
-PROMPT='$YELLOW${(%):-%~}%f$(git_super_status) %# '
+PROMPT='$YELLOW${(%):-%~}%f$(git_super_status) %F{white}%#%f '
