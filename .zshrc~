@@ -1,2 +1,0 @@
-source $HOME/.zsh/git-prompt/zshrc
-PROMPT='%B%m%~%b$(git_super_status) %# '
