@@ -12,3 +12,9 @@ export CLICOLOR=1
 autoload -U colors && colors
 autoload -U promptinit && promptinit
 PROMPT='%F{yellow}${(%):-%~}%f$(git_super_status) %F{white}%#%f '
+
+# Typo correction
+setopt correctall
+
+# RVM
+. /usr/local/rvm/scripts/rvm
