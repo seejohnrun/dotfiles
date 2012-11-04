@@ -22,7 +22,7 @@ noremap! <Right> <Esc>
 
 au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 
-colorscheme solarized
+colorscheme xoria256
 set background=dark
 
 if has("gui_macvim")

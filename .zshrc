@@ -6,7 +6,7 @@ export PATH="$HOME/Scripts:/usr/local/bin:$HOME/pear/bin:$PATH"
 export RUBYLIB="/usr/local/lib/ruby/site_ruby"
 
 # Colors
-export TERM="rxvt"
+export TERM="xterm-256color"
 export CLICOLOR=1
 
 # Prompt
@@ -22,5 +22,3 @@ ulimit -n 2048
 
 # RVM
 . /usr/local/rvm/scripts/rvm
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
