@@ -22,3 +22,5 @@ ulimit -n 2048
 
 # RVM
 . /usr/local/rvm/scripts/rvm
+
+PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting

@@ -7,6 +7,8 @@ set showtabline=2
 set number
 set wrap
 
+set backspace=0
+
 set nofoldenable " disable folding
 
 set t_Co=256
