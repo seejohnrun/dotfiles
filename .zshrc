@@ -3,6 +3,7 @@ source $HOME/.zsh/git-prompt/zshrc
 
 # Some custom search paths
 export PATH="$HOME/Scripts:/usr/local/bin:$HOME/pear/bin:$PATH"
+export PATH="/usr/local/share/npm/bin:$PATH"
 export RUBYLIB="/usr/local/lib/ruby/site_ruby"
 
 # Colors
