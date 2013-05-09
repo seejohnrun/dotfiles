@@ -7,6 +7,7 @@ set showtabline=2
 set number
 set wrap
 
+
 set backspace=0
 
 set nofoldenable " disable folding
@@ -22,10 +23,9 @@ noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
 
-au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 
 colorscheme xoria256
-set background=dark
+"set background=dark
 
 if has("gui_macvim")
 	set fuopt+=maxhorz
@@ -35,7 +35,10 @@ endif
 
 cabbr te tabedit
 au BufNew,BufRead Gemfile set syntax=ruby
-au BufNew,BufRead irb_tempfile.rb.* set syntax=ruby
 
-au BufWinEnter .rb let w:m1=matchadd('ErrorMsg', '\%>80v.\+', -1)
 au BufWinEnter     let w:m2=matchadd('ErrorMsg', '\s\+$', -1)
+
+" vim <7.3
+" au BufWinEnter *   let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+set colorcolumn=+1 " red line and over is bad
+set textwidth=80

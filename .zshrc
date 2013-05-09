@@ -7,8 +7,9 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 export RUBYLIB="/usr/local/lib/ruby/site_ruby"
 
 # Colors
-export TERM="xterm-256color"
+export TERM="screen-256color"
 export CLICOLOR=1
+export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
 
 # Prompt
 autoload -U colors && colors
@@ -23,5 +24,7 @@ ulimit -n 2048
 
 # RVM
 . /usr/local/rvm/scripts/rvm
-
 PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
