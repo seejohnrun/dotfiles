@@ -4,6 +4,7 @@ source $HOME/.zsh/git-prompt/zshrc
 # Some custom search paths
 export PATH="$HOME/Scripts:/usr/local/bin:$HOME/pear/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
+export PATH="$HOME/Scripts/AWS-ElasticBeanstalk-CLI-2.4.0/eb/macosx/python2.7:$PATH"
 export RUBYLIB="/usr/local/lib/ruby/site_ruby"
 
 # Colors
