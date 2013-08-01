@@ -24,8 +24,11 @@ setopt correctall
 ulimit -n 2048
 
 # RVM
-. /usr/local/rvm/scripts/rvm
-PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
+if [ -f /usr/local/rvm/scripts/rvm ]
+then
+	. /usr/local/rvm/scripts/rvm
+	PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
+fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
