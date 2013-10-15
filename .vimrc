@@ -5,11 +5,13 @@ call vundle#rc()
 " vundle packages
 Bundle 'gmarik/vundle'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/ctrlp.vim'
-Bundle 'vim-scripts/xoria256.vim'
 Bundle 'ervandew/supertab'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'xoria256.vim'
+Bundle 'ctrlp.vim'
+Bundle 'ZoomWin'
 
 " vim options
 filetype plugin indent on
