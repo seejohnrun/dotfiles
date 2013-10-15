@@ -1,6 +1,10 @@
 # Git Prompt
 source $HOME/.zsh/git-prompt/zshrc
 
+# zsh options
+setopt hist_ignore_dups # duplicate ignoring
+setopt correctall # typo correction
+
 # Some custom search paths
 export PATH="$HOME/Scripts:/usr/local/bin:$HOME/pear/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
@@ -17,9 +21,6 @@ autoload -U colors && colors
 autoload -U promptinit && promptinit
 PROMPT='%F{yellow}${(%):-%~}%f$(git_super_status) %F{white}%#%f '
 
-# Typo correction
-setopt correctall
-
 # Up the ULIMIT
 ulimit -n 2048
 
@@ -29,3 +30,4 @@ PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/rvm/gems/ruby-2.0.0-p195/bin:/usr/local/sbin:$PATH"
