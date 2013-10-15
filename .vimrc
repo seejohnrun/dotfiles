@@ -9,6 +9,7 @@ Bundle 'vim-scripts/ctrlp.vim'
 Bundle 'vim-scripts/xoria256.vim'
 Bundle 'ervandew/supertab'
 Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'pangloss/vim-javascript'
 
 " vim options
 filetype plugin indent on
