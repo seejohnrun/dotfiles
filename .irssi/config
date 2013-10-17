@@ -1,12 +1,5 @@
 servers = (
   {
-    chatnet = "newco";
-    address = "irc.ihost.newco.com";
-    port = "6667";
-    autoconnect = "no";
-    password = "newco_pwd";
-  },
-  {
     chatnet = "freenode";
     address = "irc.freenode.net";
     port = "6667";
@@ -15,7 +8,6 @@ servers = (
 );
 
 chatnets = {
-  brewster = { type = "IRC"; nick = "john"; };
   freenode = {
     type = "IRC";
     nick = "seejohnrun";
@@ -24,8 +16,6 @@ chatnets = {
 };
 
 channels = (
-  { name = "#brewstereng"; chatnet = "brewster"; autojoin = "yes"; },
-  { name = "#brewsterbots"; chatnet = "brewster"; autojoin = "yes"; },
   { name = "#io"; chatnet = "freenode"; autojoin = "yes"; }
 );
 

@@ -1,47 +1,38 @@
+" init vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" vundle packages
+Bundle 'gmarik/vundle'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'ervandew/supertab'
+Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'xoria256.vim'
+Bundle 'ctrlp.vim'
+Bundle 'ZoomWin'
+
+" vim options
 filetype plugin indent on
 syntax on
+cabbr te tabedit
+colorscheme xoria256
 set noexpandtab
+set nocompatible
 set tabstop=2
 set shiftwidth=2
 set showtabline=2
 set number
 set wrap
-
-
 set backspace=0
-
-set nofoldenable " disable folding
-
+set nofoldenable
 set t_Co=256
+set colorcolumn=+1 " red line and over is error
+set textwidth=80
 
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
-
-
-colorscheme xoria256
-"set background=dark
-
-if has("gui_macvim")
-	set fuopt+=maxhorz
-	set guioptions-=T
-	set guifont=Monaco:h12
-endif
-
-cabbr te tabedit
-au BufNew,BufRead Gemfile set syntax=ruby
-
-au BufWinEnter     let w:m2=matchadd('ErrorMsg', '\s\+$', -1)
-
-" > 80 is not cool
-if exists("&colorcolumn")
-	set colorcolumn=+1 " red line and over is bad
-	set textwidth=80
-else
-	au BufWinEnter *   let w:m2=matchadd('ErrorMsg', '\%81v.\+', -1)
-end
+" enforce purity
+noremap  <Up> <Nop>
+noremap  <Down> <Nop>
+noremap  <Left> <Nop>
+noremap  <Right> <Nop>
