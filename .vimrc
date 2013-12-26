@@ -18,7 +18,7 @@ filetype plugin indent on
 syntax on
 cabbr te tabedit
 colorscheme xoria256
-set noexpandtab
+set expandtab
 set nocompatible
 set tabstop=2
 set shiftwidth=2
