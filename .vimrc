@@ -12,6 +12,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'xoria256.vim'
 Bundle 'ctrlp.vim'
 Bundle 'ZoomWin'
+Bundle 'Syntastic'
 
 " vim options
 filetype plugin indent on
