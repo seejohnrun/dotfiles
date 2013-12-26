@@ -14,6 +14,8 @@ Bundle 'ctrlp.vim'
 Bundle 'ZoomWin'
 Bundle 'Syntastic'
 Bundle 'matchit.zip'
+Bundle 'tComment'
+Bundle 'tristen/vim-sparkup'
 
 " vim options
 filetype plugin indent on
