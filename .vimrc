@@ -16,12 +16,15 @@ Bundle 'Syntastic'
 Bundle 'matchit.zip'
 Bundle 'tComment'
 Bundle 'tristen/vim-sparkup'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-markdown'
 
 " vim options
 filetype plugin indent on
 syntax on
 cabbr te tabedit
-colorscheme xoria256
+colorscheme solarized
+set background=dark
 set expandtab
 set nocompatible
 set tabstop=2
