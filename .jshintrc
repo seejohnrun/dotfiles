@@ -1,0 +1,57 @@
+{
+
+    "bitwise"       : true,
+    "curly"         : true,
+    "eqeqeq"        : true,
+    "forin"         : false, // no longer advisable, IMO
+    "immed"         : true,
+    "latedef"       : true,
+    "newcap"        : true,
+    "noarg"         : true,
+    "noempty"       : true,
+    "nonew"         : true,
+    "plusplus"      : false, // i like plusplus
+    "regexp"        : true,
+    "undef"         : true,
+    "strict"        : false, // not yet
+    "trailing"      : true,
+    "asi"           : false,
+    "boss"          : false,
+    "debug"         : false,
+    "eqnull"        : false,
+    "es5"           : false,
+    "esnext"        : false,
+    "evil"          : false,
+    "expr"          : false,
+    "funcscope"     : false,
+    "globalstrict"  : false,
+    "iterator"      : false,
+    "lastsemic"     : false,
+    "laxbreak"      : false,
+    "laxcomma"      : false,
+    "loopfunc"      : false,
+    "multistr"      : false,
+    "onecase"       : false,
+    "proto"         : false,
+    "regexdash"     : false,
+    "scripturl"     : false,
+    "smarttabs"     : false,
+    "shadow"        : false,
+    "sub"           : false,
+    "supernew"      : false,
+    "validthis"     : false,
+    "nomen"         : false,
+    "onevar"        : false, // silly rule
+    "passfail"      : false,
+    "white"         : true,
+
+    "maxerr"        : 100,
+    "browser"       : true,
+    "predef"        : [
+        "angular",
+        "jQuery",
+        "$"
+    ],
+    "indent"        : 2
+
+}
