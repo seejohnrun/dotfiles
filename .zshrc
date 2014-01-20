@@ -32,14 +32,13 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # RVM
 . /usr/local/rvm/scripts/rvm
-export PATH="/usr/local/rvm/gems/ruby-2.0.0-p247/bin:/usr/local/rvm/bin:$PATH" # Add RVM to PATH for scripting
+export PATH="/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/rvm/bin:$PATH" # Add RVM to PATH for scripting
 
 # Added by the Heroku Toolbelt
-export PATH="/usr/local/rvm/gems/ruby-2.0.0-p195/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
 
 # Java 7
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
 # bind keys
 bindkey -e
->>>>>>> Stashed changes
