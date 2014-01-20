@@ -13,7 +13,7 @@
     "plusplus"      : false, // i like plusplus
     "regexp"        : true,
     "undef"         : true,
-    "strict"        : false, // not yet
+    "strict"        : true,
     "trailing"      : true,
     "asi"           : false,
     "boss"          : false,
