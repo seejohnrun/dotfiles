@@ -18,13 +18,15 @@ Bundle 'tComment'
 Bundle 'tristen/vim-sparkup'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-markdown'
+Bundle 'toyamarinyon/vim-swift'
 
 " vim options
 filetype plugin indent on
 syntax on
 cabbr te tabedit
-colorscheme solarized
-set background=dark
+colorscheme xoria256
+" colorscheme solarized
+" set background=dark
 set expandtab
 set nocompatible
 set tabstop=2
