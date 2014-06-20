@@ -1,57 +1,80 @@
 {
 
+    /** regular options */
+
     "bitwise"       : true,
+    "camelcase"     : false, // we use these for services
     "curly"         : true,
     "eqeqeq"        : true,
+    "es3"           : true,
     "forin"         : false, // no longer advisable, IMO
+    "freeze"        : true,
     "immed"         : true,
+    "indent"        : 2,
     "latedef"       : true,
     "newcap"        : true,
     "noarg"         : true,
     "noempty"       : true,
+    "nonbsp"        : true,
     "nonew"         : true,
     "plusplus"      : false, // i like plusplus
-    "regexp"        : true,
+    "quotmark"      : true,
     "undef"         : true,
+    "unused"        : true,
     "strict"        : true,
     "trailing"      : true,
+    "maxparams"     : null,
+    "maxdepth"      : null,
+    "maxstatements" : null,
+    "maxcomplexity" : null,
+    "maxlen"        : null,
+
+    /** relaxing options */
+
     "asi"           : false,
     "boss"          : false,
     "debug"         : false,
     "eqnull"        : false,
-    "es5"           : false,
     "esnext"        : false,
     "evil"          : false,
     "expr"          : false,
     "funcscope"     : false,
+    "gcl"           : false,
     "globalstrict"  : false,
     "iterator"      : false,
     "lastsemic"     : false,
     "laxbreak"      : false,
     "laxcomma"      : false,
     "loopfunc"      : false,
+    "maxerr"        : null,
+    "moz"           : false,
     "multistr"      : false,
-    "onecase"       : false,
+    "notypeof"      : false,
     "proto"         : false,
-    "regexdash"     : false,
     "scripturl"     : false,
     "smarttabs"     : false,
     "shadow"        : false,
     "sub"           : false,
     "supernew"      : false,
     "validthis"     : false,
-    "nomen"         : false,
-    "onevar"        : false, // silly rule
-    "passfail"      : false,
-    "white"         : true,
+    "noyield"       : false,
 
-    "maxerr"        : 100,
+    /** legacy options */
+
+    "nomen"         : false, // sometimes _'s are used when using 3rd party libs
+    "onevar"        : false, // silly rule, i disagree with
+    "passfail"      : false,
+    "white"         : false,
+
+    /** configuration options for browser */
+
     "browser"       : true,
     "predef"        : [
         "angular",
         "jQuery",
-        "$"
-    ],
-    "indent"        : 2
+        "$",
+        "_",
+        "moment"
+    ]
 
 }
