@@ -1,5 +1,5 @@
 " init vundle
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle/
 call vundle#rc()
 
 " vundle packages
@@ -19,6 +19,11 @@ Bundle 'tristen/vim-sparkup'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'toyamarinyon/vim-swift'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'slim-template/vim-slim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'fatih/vim-go'
+Bundle 'mileszs/ack.vim'
 
 " vim options
 filetype plugin indent on
@@ -42,6 +47,7 @@ set hlsearch
 
 " turn off vim-markdown folding
 let g:vim_markdown_folding_disabled=1
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " enforce purity
 noremap  <Up> <Nop>
