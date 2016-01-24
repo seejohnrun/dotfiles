@@ -19,11 +19,14 @@ Bundle 'tristen/vim-sparkup'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'toyamarinyon/vim-swift'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'slim-template/vim-slim'
-Bundle 'tpope/vim-fugitive'
 Bundle 'fatih/vim-go'
+Bundle 'tpope/vim-fugitive'
 Bundle 'mileszs/ack.vim'
+Bundle 'slim-template/vim-slim'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'briancollins/vim-jst'
+Bundle 'jszakmeister/vim-togglecursor'
 
 " vim options
 filetype plugin indent on

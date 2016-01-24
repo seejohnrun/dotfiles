@@ -9,7 +9,6 @@ setopt correctall # typo correction
 export PATH="$HOME/Scripts:/usr/local/bin:/usr/local/sbin:$HOME/pear/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/Scripts/AWS-ElasticBeanstalk-CLI-2.4.0/eb/macosx/python2.7:$PATH"
-export RUBYLIB="/usr/local/lib/ruby/site_ruby"
 
 # Colors
 export TERM="screen-256color"
@@ -32,7 +31,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # RVM
 . /usr/local/rvm/scripts/rvm
-export PATH="/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/rvm/bin:$PATH" # Add RVM to PATH for scripting
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
