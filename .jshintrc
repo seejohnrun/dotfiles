@@ -70,11 +70,17 @@
 
     "browser"       : true,
     "predef"        : [
-        "angular",
         "jQuery",
-        "$",
         "_",
-        "moment"
+        "moment",
+        "phantom",
+        "console",
+        "require",
+        "JSON",
+        "chrome",
+        "kango",
+        "$",
+"fetch"
     ]
 
 }

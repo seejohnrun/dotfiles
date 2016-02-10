@@ -6,7 +6,7 @@ setopt hist_ignore_dups # duplicate ignoring
 setopt correctall # typo correction
 
 # Some custom search paths
-export PATH="$HOME/Scripts:/usr/local/bin:/usr/local/sbin:$HOME/pear/bin:$PATH"
+export PATH="$HOME/Scripts:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/pear/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/Scripts/AWS-ElasticBeanstalk-CLI-2.4.0/eb/macosx/python2.7:$PATH"
 export RUBYLIB="/usr/local/lib/ruby/site_ruby"
@@ -21,6 +21,7 @@ export EDITOR="vim"
 
 # Prompt
 autoload -U colors && colors
+autoload -U compinit && compinit
 autoload -U promptinit && promptinit
 PROMPT='%F{yellow}${(%):-%~}%f$(git_super_status) %F{white}%#%f '
 
@@ -30,15 +31,12 @@ ulimit -n 2048
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# RVM
-. /usr/local/rvm/scripts/rvm
-export PATH="/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/rvm/bin:$PATH" # Add RVM to PATH for scripting
-
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/rvm/gems/ruby-2.1.0/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
 
-# Java 7
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
-
 # bind keys
 bindkey -e
+
+alias be="bundle exec"
+
+export DEFAULT_RELEASE_NOTIFICATION_RECIPIENT="all-up-in-technology@gforums.com"
