@@ -66,7 +66,3 @@ noremap  <Right> <Nop>
 
 " set nonumber
 highlight Normal ctermbg=None
-
-" custom schemes
-autocmd BufEnter * colorscheme xoria256
-autocmd BufEnter *.html colorscheme vividchalk
