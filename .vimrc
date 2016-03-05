@@ -31,6 +31,8 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'briancollins/vim-jst'
 Bundle 'jszakmeister/vim-togglecursor'
+Bundle 'vim-airline/vim-airline'
+Bundle 'airblade/vim-gitgutter'
 
 " vim options
 filetype plugin indent on
@@ -41,6 +43,7 @@ colorscheme xoria256
 " set background=dark
 set expandtab
 set nocompatible
+set laststatus=2
 set tabstop=2
 set shiftwidth=2
 set showtabline=2
