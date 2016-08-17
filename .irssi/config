@@ -15,9 +15,7 @@ chatnets = {
   };
 };
 
-channels = (
-  { name = "#io"; chatnet = "freenode"; autojoin = "yes"; }
-);
+channels = ( { name = "#io"; chatnet = "freenode"; autojoin = "yes"; } );
 
 hilights = ( { text = "burrito"; nick = "no"; word = "yes"; } );
 
@@ -178,6 +176,13 @@ statusbar = {
         topic = { };
         topic_empty = { };
         topicbarend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    awl_0 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
       };
     };
   };
