@@ -19,11 +19,7 @@ channels = (
   { name = "#io"; chatnet = "freenode"; autojoin = "yes"; }
 );
 
-hilights = (
-  { text = "burrito"; nick = "no"; word = "yes"; },
-  { text = "john"; nick = "yes"; word = "yes"; },
-  { text = "seejohnrun"; nick = "yes"; word = "yes"; }
-);
+hilights = ( { text = "burrito"; nick = "no"; word = "yes"; } );
 
 aliases = {
   J = "join";
@@ -103,10 +99,9 @@ statusbar = {
     topic_empty = " Irssi v$J - http://www.irssi.org";
 
     # all of these treated specially, they're only displayed when needed
-    # Solarized
-    lag = "{sb Lag: %m$0-%n}";
+    lag = "{sb Lag: $0-}";
     act = "{sb Act: $0-}";
-    more = "%k%3-- more --%n";
+    more = "-- more --";
   };
 
   # there's two type of statusbars. root statusbars are either at the top
@@ -185,42 +180,15 @@ statusbar = {
         topicbarend = { priority = "100"; alignment = "right"; };
       };
     };
-    awl_0 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_0 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
   };
 };
 
 settings = {
-
-  "perl/core/scripts" = {
-    ### For Solarized adv_windowlist.pl script
-    awl_display_key_active = "%k%2[$Q=$N:$C]%n";
-    awl_display_nokey_active = "%k%2[$N:$C]%n";
-    awl_display_key = "[$Q:$H$C$S]";
-    awl_display_nokey = "[$N:$H$C$S]";
-
-    ### For Solarized trackbar.pl script
-    trackbar_style = "%B";
-  };
-
   core = { 
     real_name = "John Crepezzi";
     user_name = "john";
     nick = "john";
   };
-
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = {
-    theme = "solarized";
-    hilight_color = "= %R";
-    autolog = "yes";
-  };
-
+  "fe-common/core" = { theme = "revolutionaryv3"; };
 };
-keyboard = ( { key = "meta-y"; id = "command"; data = "window last"; } );
-logs = { };

@@ -33,6 +33,8 @@ Bundle 'briancollins/vim-jst'
 Bundle 'jszakmeister/vim-togglecursor'
 Bundle 'vim-airline/vim-airline'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'rking/ag.vim'
+Bundle 'Chun-Yang/vim-action-ag'
 
 " vim options
 filetype plugin indent on
@@ -66,6 +68,9 @@ noremap  <Up> <Nop>
 noremap  <Down> <Nop>
 noremap  <Left> <Nop>
 noremap  <Right> <Nop>
+
+" ag-vim shortcut
+map <Leader>f gagiw
 
 " set nonumber
 highlight Normal ctermbg=None
