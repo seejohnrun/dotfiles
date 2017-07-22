@@ -17,7 +17,6 @@ export PATH="$HOME/Scripts/AWS-ElasticBeanstalk-CLI-2.4.0/eb/macosx/python2.7:$P
 # Colors
 export TERM="screen-256color"
 export CLICOLOR=1
-export JAVA_HOME=$(/usr/libexec/java_home)
 
 # editor
 export EDITOR="vim"
@@ -39,10 +38,3 @@ bindkey -e
 
 alias be="bundle exec"
 alias gpr="git pull-request"
-
-export DEFAULT_RELEASE_NOTIFICATION_RECIPIENT="all-up-in-technology@gforums.com"
-export GRADLE_HOME="/opt/boxen/homebrew/Cellar/gradle/2.14/libexec"
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
-
-# boxen
-source /opt/boxen/env.sh
