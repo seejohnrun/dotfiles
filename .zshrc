@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/seejohnrun/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
 alias clean-branches="git branch --merged master | grep -v "\master" | xargs -n 1 git branch -d"
 alias doug-kill="ps -ef | fzf --multi --header-lines=1 | awk '{ print $2 }' | xargs -t kill -9"
