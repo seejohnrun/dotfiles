@@ -11,7 +11,6 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'ctrlp.vim'
 Bundle 'ZoomWin'
-Bundle 'Syntastic'
 Bundle 'matchit.zip'
 Bundle 'tComment'
 Bundle 'tristen/vim-sparkup'
@@ -35,6 +34,13 @@ Bundle 'vim-airline/vim-airline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'rking/ag.vim'
 Bundle 'Chun-Yang/vim-action-ag'
+Bundle 'jparise/vim-graphql'
+Bundle 'w0rp/ale'
+
+" take in an extra file from the local directory if necessary
+if filereadable(glob(".vimrc.local"))
+  source .vimrc.local
+endif
 
 " vim options
 filetype plugin indent on
@@ -59,9 +65,6 @@ set hlsearch
 
 " turn off vim-markdown folding
 let g:vim_markdown_folding_disabled=1
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_javascript_checkers = ['jshint', 'jscs']
-let g:syntastic_html_tidy_ignore_errors = ['unescaped &', 'lacks "action']
 
 " enforce purity
 noremap  <Up> <Nop>
