@@ -2,7 +2,6 @@
 source $HOME/.zsh/git-prompt/zshrc
 
 alias clean-branches="git branch --merged master | grep -v "\master" | xargs -n 1 git branch -d"
-alias doug-kill="ps -ef | fzf --multi --header-lines=1 | awk '{ print $2 }' | xargs -t kill -9"
 alias serve="ruby -run -e httpd . -p 9090"
 
 # zsh options
@@ -29,9 +28,6 @@ PROMPT='%F{yellow}${(%):-%~}%f$(git_super_status) %F{white}%#%f '
 
 # Up the ULIMIT
 ulimit -n 2048
-
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/sbin:/usr/local/heroku/bin:$PATH"
 
 # bind keys
 bindkey -e
