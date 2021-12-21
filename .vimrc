@@ -1,41 +1,37 @@
-" init vundle
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
-
-" vundle packages
-Bundle 'gmarik/vundle'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'ervandew/supertab'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'ctrlp.vim'
-Bundle 'ZoomWin'
-Bundle 'matchit.zip'
-Bundle 'tComment'
-Bundle 'tristen/vim-sparkup'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'kballard/vim-swift'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'slim-template/vim-slim'
-Bundle 'fatih/vim-go'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mileszs/ack.vim'
-Bundle 'puppetlabs/puppet-syntax-vim'
-Bundle 'jiangmiao/simple-javascript-indenter'
-Bundle 'mxw/vim-jsx'
-Bundle 'burnettk/vim-angular'
-Bundle 'othree/html5.vim'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'briancollins/vim-jst'
-Bundle 'jszakmeister/vim-togglecursor'
-Bundle 'vim-airline/vim-airline'
-Bundle 'rking/ag.vim'
-Bundle 'Chun-Yang/vim-action-ag'
-Bundle 'jparise/vim-graphql'
-Bundle 'leafgarland/typescript-vim'
-" Bundle 'w0rp/ale'
+" plug packages
+call plug#begin('~/.vim/plugged')
+Plug 'gmarik/vundle'
+Plug 'vim-ruby/vim-ruby'
+Plug 'ervandew/supertab'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
+Plug 'markstory/ZoomWin'
+Plug 'adelarsq/vim-matchit'
+Plug 'tristen/vim-sparkup'
+Plug 'plasticboy/vim-markdown'
+Plug 'kballard/vim-swift'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'slim-template/vim-slim'
+Plug 'fatih/vim-go'
+Plug 'tpope/vim-fugitive'
+Plug 'mileszs/ack.vim'
+Plug 'puppetlabs/puppet-syntax-vim'
+Plug 'jiangmiao/simple-javascript-indenter'
+Plug 'mxw/vim-jsx'
+Plug 'burnettk/vim-angular'
+Plug 'othree/html5.vim'
+Plug 'flazz/vim-colorschemes'
+Plug 'elixir-lang/vim-elixir'
+Plug 'briancollins/vim-jst'
+Plug 'jszakmeister/vim-togglecursor'
+Plug 'vim-airline/vim-airline'
+Plug 'rking/ag.vim'
+Plug 'Chun-Yang/vim-action-ag'
+Plug 'jparise/vim-graphql'
+Plug 'leafgarland/typescript-vim'
+" Plug 'w0rp/ale'
+call plug#end()
 
 " don't let the syntax highlighter kill editor performance
 let g:ale_lint_on_text_changed = 'never'
@@ -50,7 +46,7 @@ endif
 filetype plugin indent on
 syntax on
 cabbr te tabedit
-colorscheme xoria256
+silent! colorscheme xoria256 # installed via a plug
 set expandtab
 set nocompatible
 set laststatus=2
