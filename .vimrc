@@ -31,12 +31,11 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'briancollins/vim-jst'
 Bundle 'jszakmeister/vim-togglecursor'
 Bundle 'vim-airline/vim-airline'
-" Bundle 'airblade/vim-gitgutter'
 Bundle 'rking/ag.vim'
 Bundle 'Chun-Yang/vim-action-ag'
 Bundle 'jparise/vim-graphql'
-" Bundle 'w0rp/ale'
 Bundle 'leafgarland/typescript-vim'
+" Bundle 'w0rp/ale'
 
 " don't let the syntax highlighter kill editor performance
 let g:ale_lint_on_text_changed = 'never'
@@ -52,8 +51,6 @@ filetype plugin indent on
 syntax on
 cabbr te tabedit
 colorscheme xoria256
-" colorscheme solarized
-" set background=dark
 set expandtab
 set nocompatible
 set laststatus=2
@@ -72,13 +69,10 @@ set hlsearch
 let g:vim_markdown_folding_disabled=1
 
 " enforce purity
-" noremap  <Up> <Nop>
-" noremap  <Down> <Nop>
-" noremap  <Left> <Nop>
-" noremap  <Right> <Nop>
-
-" ag-vim shortcut
-map <Leader>f gagiw
+noremap  <Up> <Nop>
+noremap  <Down> <Nop>
+noremap  <Left> <Nop>
+noremap  <Right> <Nop>
 
 " set nonumber
 highlight Normal ctermbg=None
