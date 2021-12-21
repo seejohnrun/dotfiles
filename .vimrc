@@ -46,7 +46,7 @@ endif
 filetype plugin indent on
 syntax on
 cabbr te tabedit
-silent colorscheme xoria256 " installed via a plug
+silent! colorscheme xoria256 " installed via a plug
 set expandtab
 set nocompatible
 set laststatus=2
