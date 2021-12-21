@@ -6,7 +6,7 @@ Plug 'ervandew/supertab'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'pangloss/vim-javascript'
 Plug 'kchmck/vim-coffee-script'
-Plug 'markstory/ZoomWin'
+Plug 'vim-scripts/ZoomWin'
 Plug 'adelarsq/vim-matchit'
 Plug 'tristen/vim-sparkup'
 Plug 'plasticboy/vim-markdown'
@@ -21,7 +21,6 @@ Plug 'jiangmiao/simple-javascript-indenter'
 Plug 'mxw/vim-jsx'
 Plug 'burnettk/vim-angular'
 Plug 'othree/html5.vim'
-Plug 'flazz/vim-colorschemes'
 Plug 'elixir-lang/vim-elixir'
 Plug 'briancollins/vim-jst'
 Plug 'jszakmeister/vim-togglecursor'
@@ -30,6 +29,7 @@ Plug 'rking/ag.vim'
 Plug 'Chun-Yang/vim-action-ag'
 Plug 'jparise/vim-graphql'
 Plug 'leafgarland/typescript-vim'
+Plug 'vim-scripts/xoria256.vim'
 " Plug 'w0rp/ale'
 call plug#end()
 
@@ -46,7 +46,7 @@ endif
 filetype plugin indent on
 syntax on
 cabbr te tabedit
-silent! colorscheme xoria256 # installed via a plug
+silent colorscheme xoria256 " installed via a plug
 set expandtab
 set nocompatible
 set laststatus=2
