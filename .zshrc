@@ -1,10 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
 
-alias clean-branches="git branch --merged master | grep -v "\master" | xargs -n 1 git branch -d"
+alias clean-branches="git branch --merged main | grep -v "\main" | xargs -n 1 git branch -d"
 alias doug-kill="ps -ef | fzf --multi --header-lines=1 | awk '{ print $2 }' | xargs -t kill -9"
 alias serve="ruby -run -e httpd . -p 9090"
 alias rubogit='bin/rubocop `git diff --name-only ; git diff --name-only --staged`'
@@ -94,3 +95,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+eval "$(rbenv init -)"
+
+alias be="bundle exec"
+
+alias rhaste="go run ~/go/src/github.com/seejohnrun/rhaste/main.go"
+alias ct="ctags -R -f ./.git/tags ."
+export PATH="/usr/local/sbin:$PATH"
+export GITHUB_PATH=~/github/github
+
+eval "$(nodenv init -)"
+
+alias asoc="ag 'associated_repository_ids' --ignore-dir="test" --ignore=app/models/user/associated_repositories_dependency.rb --ignore=app/controllers/orgs/project_cards_controller.rb --ignore=app/models/contribution/visibility_checker.rb --ignore=app/controllers/stars_controller.rb --ignore=app/api/access_control/roles_dependency.rb | ag -v 'repository_ids:' | ag --stats -v '\s+#'"
+
+export EDITOR=vim
+export PAGER=bat
+export DISABLE_AUTO_TITLE="true"

@@ -31,11 +31,16 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'briancollins/vim-jst'
 Bundle 'jszakmeister/vim-togglecursor'
 Bundle 'vim-airline/vim-airline'
-Bundle 'airblade/vim-gitgutter'
+" Bundle 'airblade/vim-gitgutter'
 Bundle 'rking/ag.vim'
 Bundle 'Chun-Yang/vim-action-ag'
 Bundle 'jparise/vim-graphql'
-Bundle 'w0rp/ale'
+" Bundle 'w0rp/ale'
+Bundle 'leafgarland/typescript-vim'
+
+" don't let the syntax highlighter kill editor performance
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
 
 " take in an extra file from the local directory if necessary
 if filereadable(glob(".vimrc.local"))
@@ -67,10 +72,10 @@ set hlsearch
 let g:vim_markdown_folding_disabled=1
 
 " enforce purity
-noremap  <Up> <Nop>
-noremap  <Down> <Nop>
-noremap  <Left> <Nop>
-noremap  <Right> <Nop>
+" noremap  <Up> <Nop>
+" noremap  <Down> <Nop>
+" noremap  <Left> <Nop>
+" noremap  <Right> <Nop>
 
 " ag-vim shortcut
 map <Leader>f gagiw
