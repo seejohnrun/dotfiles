@@ -12,3 +12,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # install the plugs
 vim +PlugInstall +qall > /dev/null
+
+if $CODESPACES
+  sudo apt install tmux
+fi
