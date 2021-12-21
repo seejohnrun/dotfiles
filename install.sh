@@ -12,3 +12,4 @@ wd=$(pwd)
 ln -sf $wd/.vimrc ~/.vimrc
 ln -sf $wd/.tmux.conf ~/.tmux.conf
 ln -sf $wd/.zshrc ~/.zshrc
+ln -sf $wd/dotfiles-scripts ~/dotfiles-scripts
