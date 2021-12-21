@@ -13,6 +13,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # install the plugs
 vim +PlugInstall +qall > /dev/null
 
-if $CODESPACES
-  sudo apt install tmux
+# install packages I always want
+if [ $CODESPACES == 'true' ] ; then
+  sudo apt install -y tmux
 fi
+
