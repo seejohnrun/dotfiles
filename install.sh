@@ -8,6 +8,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugInstall +qall
 
 # symlink the dotfiles
-ln -s .vimrc ~/.vimrc
-ln -s .tmux.conf ~/.tmux.conf
-ln -s .zshrc ~/.zshrc
+wd=$(pwd)
+ln -sf $wd/.vimrc ~/.vimrc
+ln -sf $wd/.tmux.conf ~/.tmux.conf
+ln -sf $wd/.zshrc ~/.zshrc
