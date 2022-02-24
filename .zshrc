@@ -92,8 +92,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
+if [ -x "$(command -v rbenv)" ]; then
+  eval "$(rbenv init -)"
+fi
+
+if [ -x "$(command -v nodenv)" ]; then
+  eval "$(nodenv init -)"
+fi
 
 alias be="bundle exec"
 alias ct="ctags -R -f ./.git/tags ."
